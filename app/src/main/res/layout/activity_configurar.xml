@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_principal_mor"
+    tools:context="com.example.iguano_s.mashogarsupervisor.pantallas.configurar">
+
+
+    <EditText
+        android:id="@+id/txt_configura_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_clave"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        />
+
+    <EditText
+        android:id="@+id/txt_configura_bodega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_boedga"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        />
+        <EditText
+            android:id="@+id/txt_configura_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lbl_nombre"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+
+
+
+
+
+        <EditText
+            android:id="@+id/txt_configua_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/lbl_pass"
+            android:inputType="textPassword"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+    <EditText
+        android:id="@+id/txt_configua_recibo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_recibo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        />
+
+    <EditText
+        android:id="@+id/txt_configua_puesto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_puesto"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/btn_configurar_guardar_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_guardar"
+            android:onClick="clicGuardarUsuario"
+            />
+        <Button
+            android:id="@+id/btn_configurar_modificar_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_modificar"
+            android:onClick="clicModificarUsuario"
+            tools:ignore="OnClick" />
+        <Button
+            android:id="@+id/btn_configurar_eliniar_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_eliminar"
+            android:onClick="clicEliminarUsuario"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lbl_agregar_ruta"
+            android:textColor="@color/colorMisLetras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        <EditText
+            android:id="@+id/txt_configua_ruta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        > <Button
+        android:id="@+id/btn_configurar_agragar_ruta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_guardar"
+        android:onClick="clicGuardarRuta"
+        />
+        <Button
+            android:id="@+id/btn_configurar_eliniar_ruta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_eliminar"
+            android:onClick="clicEliminarRuta"
+            /> </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_configurar_rutas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ListView
+        android:id="@+id/lista_configura_ruta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</android.support.v7.widget.LinearLayoutCompat>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_principal_mor"
+    android:orientation="vertical"
+    tools:context="com.example.iguano_s.mashogarsupervisor.pantallas.SeleccionarLista$agregarIndicacion">
+
+    <TextView
+        android:id="@+id/lbl_titulo_indicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_agregar_indicacion"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+        />
+
+    <TextView
+        android:id="@+id/lbl_ind_venta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_venta"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_alignParentTop="true"
+        />
+
+
+    <TextView
+        android:id="@+id/lbl_ind_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_cliente"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+
+        />
+
+    <TextView
+        android:id="@+id/lbl_ind_nombre"
+        android:layout_margin="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_nombre"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+
+    <TextView
+        android:id="@+id/lbl_ind_saldo"
+
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_saldo"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="@string/lbl_agregar_indicacion"
+            android:textColor="@color/colorMisLetras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+        <EditText
+            android:id="@+id/txt_cantidad_recibo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/lbl_agregar_indicacion"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_guarda_recibo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/notas_mor"
+
+        android:onClick="clicGuardarIndicacion"
+        />
+
+
+</android.support.v7.widget.LinearLayoutCompat>

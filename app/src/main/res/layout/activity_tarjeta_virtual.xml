@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_principal_mor"
+    tools:context="com.example.iguano_s.mashogarsupervisor.pantallas.tarjeta_virtual"
+    android:verticalScrollbarPosition="left"
+    android:scrollbars="vertical"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/lbl_tar_ruta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_ruta"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:layout_alignParentTop="true"
+        />
+
+
+    <TextView
+        android:id="@+id/lbl_tar_venta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_venta"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_alignParentTop="true"
+         />
+
+
+
+    <TextView
+        android:id="@+id/lbl_tar_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_cliente"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+
+        />
+
+    <TextView
+        android:id="@+id/lbl_tar_nombre"
+        android:layout_margin="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_nombre"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+
+    <TextView
+        android:id="@+id/lbl_tar_direccion"
+        android:layout_margin="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_direccion"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        />
+
+    <TextView
+        android:id="@+id/lbl_tar_casa_datos"
+        android:layout_margin="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_direccion"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        />
+    <TextView
+        android:id="@+id/lbl_conyuge"
+        android:layout_margin="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_conyuge"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        />
+
+    <LinearLayout
+        android:id="@+id/grupo_targeta_botones_referencias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btn_tar_ref1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lbl_ref1"
+            />
+
+        <Button
+            android:id="@+id/btn_tar_ref2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lbl_ref2"
+            />
+
+        <Button
+            android:id="@+id/btn_tar_aval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lbl_aval"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/grupo_targeta_fechas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <TextView
+            android:id="@+id/lbl_tar_fecha"
+
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_fecha"
+            android:textColor="@color/colorMisLetras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+
+            />
+
+        <TextView
+            android:id="@+id/lbl_tar_plazo"
+
+            android:layout_weight="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_plazo"
+            android:textColor="@color/colorMisLetras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+            />
+
+        <TextView
+            android:id="@+id/lbl_tar_vence"
+            android:layout_weight="3"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_vence"
+            android:textColor="@color/colorMisLetras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+            />
+
+        <TextView
+            android:id="@+id/lbl_tar_estado"
+            android:layout_weight=".5"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_estado_atencion"
+            android:textColor="@color/colorMisLetras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/grupo_targeta_totales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grupo_targeta_fechas"
+        >
+
+
+
+        <TextView
+            android:id="@+id/lbl_tar_total"
+            android:layout_margin="5dp"
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_total"
+            android:textColor="@color/colorMisLetras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+            />
+
+        <TextView
+            android:id="@+id/lbl_tar_enganche"
+            android:layout_margin="5dp"
+            android:layout_weight="1.5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_enganche"
+            android:textColor="@color/colorMisLetras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+            />
+
+        <TextView
+            android:id="@+id/lbl_tar_descuento"
+            android:layout_weight="3"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_descuento"
+            android:textColor="@color/colorMisLetras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+            />
+
+        <TextView
+            android:id="@+id/lbl_tar_saldo"
+            android:layout_weight=".5"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_saldo"
+            android:textColor="@color/colorMisLetras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/grupo_targeta_pagosde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/grupo_targeta_totales"
+        >
+        <TextView
+            android:id="@+id/lbl_tar_pago_contrato"
+            android:layout_weight="3"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_pagos_de"
+            android:textColor="@color/colorMisLetras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+            />
+
+        <TextView
+            android:id="@+id/lbl_tar_pago_recomendado"
+            android:layout_weight="2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_pagos_recomendado"
+            android:textColor="@color/colorMisLetras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+            />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lista_tar_articulos"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+    ></ListView>
+
+    <LinearLayout
+        android:id="@+id/grupo_botones_agregar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_below="@id/lista_tar_articulos"
+        >
+
+        <Button
+            android:id="@+id/boton_agregar_pago"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="OnClicAgregarPago"
+            android:background="@drawable/agregar_pago_mor"> </Button>
+
+        <Button
+            android:id="@+id/boton_agregar_arreglo"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:onClick="OnClicAgregarIndicacion"
+            android:background="@drawable/notas_mor"> </Button>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/grupo_targeta_listas_pagos_arre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/grupo_botones_agregar"
+        >
+        <ListView
+            android:id="@+id/lista_tar_pagos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            ></ListView>
+
+        <ListView
+            android:id="@+id/lista_tar_arreglos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            ></ListView>
+
+
+        </LinearLayout>
+
+
+
+
+
+</android.support.v7.widget.LinearLayoutCompat>

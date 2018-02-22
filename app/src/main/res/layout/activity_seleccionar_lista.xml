@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_principal_mor"
+    android:orientation="vertical"
+    tools:context="com.example.iguano_s.mashogarsupervisor.pantallas.SeleccionarLista">
+
+    <LinearLayout
+        android:id="@+id/grupo_buscar_ruta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <EditText
+            android:id="@+id/txt_ruta_seleccionada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:hint="@string/lbl_agregar_ruta"
+
+            android:inputType="number"
+            android:textColorHint="@color/colorMisLetras"
+            android:textColor="@color/colorMisLetras"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/grupo_botones_listas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageButton
+            android:id="@+id/img_lista1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/inmediatas_mor"
+            android:contentDescription="@string/lbl_estado_lista1" />
+
+        <ImageButton
+            android:id="@+id/img_lista2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/atrazadas_mor"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/img_lista3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/urgentes_mor"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <TextView
+
+            android:id="@+id/lbl_lista_seleccionada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorMisLetras"
+            android:text="@string/lbl_estado_lista1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textAlignment="center"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_lista_seleccionada"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

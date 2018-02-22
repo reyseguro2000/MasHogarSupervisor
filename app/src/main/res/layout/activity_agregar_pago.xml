@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_principal_mor"
+    tools:context="com.example.iguano_s.mashogarsupervisor.pantallas.agregarPago"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/lbl_titulo_pago"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_agregar_pago"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+        />
+
+    <TextView
+        android:id="@+id/lbl_pago_nuevo_ruta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_ruta"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:id="@+id/lbl_pag_no_recibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_venta"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:id="@+id/lbl_pag_venta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_venta"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_alignParentTop="true"
+        />
+
+
+    <TextView
+        android:id="@+id/lbl_pag_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_cliente"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+
+        />
+
+    <TextView
+        android:id="@+id/lbl_pag_nombre"
+        android:layout_margin="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_nombre"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        />
+
+
+    <TextView
+        android:id="@+id/lbl_pag_saldo"
+
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_saldo"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+        />
+    <LinearLayout
+        android:id="@+id/grupo_pagos_pagosde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <TextView
+            android:id="@+id/lbl_pag_contrato"
+            android:layout_weight="3"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_pagos_de"
+            android:textColor="@color/colorMisLetras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+            />
+
+        <TextView
+            android:id="@+id/lbl_pag_recomendado"
+            android:layout_weight="2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_pagos_recomendado"
+            android:textColor="@color/colorMisLetras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lbl_bueno_por"
+            android:textColor="@color/colorMisLetras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+        <EditText
+            android:id="@+id/txt_cantidad_recibo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_restar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_resta"
+        android:onClick="clicResta"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/lbl_cantidad2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lbl_saldo_nuevo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/lbl_pag_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/lbl_resta"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_guarda_recibo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/agregar_pago_mor"
+
+        android:onClick="clicGuardarRecibo"
+        />
+
+</android.support.v7.widget.LinearLayoutCompat>

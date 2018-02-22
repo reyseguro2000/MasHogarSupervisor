@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btn_listado_eliminar_recibo"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:text="X"
+
+        />
+    <TextView
+        android:id="@+id/lbl_listado_recibos_recibo"
+        android:text="@string/lbl_recibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        />
+    <TextView
+        android:id="@+id/lbl_listado_recibos_cantidad"
+        android:text="@string/lbl_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:id="@+id/lbl_listado_recibos_venta"
+        android:text="@string/lbl_venta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        />
+    <TextView
+        android:id="@+id/lbl_listado_recibos_fecha"
+        android:text="@string/lbl_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        />
+
+
+</LinearLayout>

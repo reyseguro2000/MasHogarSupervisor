@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_principal_mor"
+    android:orientation="vertical"
+    tools:context="com.example.iguano_s.mashogarsupervisor.pantallas.Catalogo_Detalles">
+
+    <LinearLayout
+        android:id="@+id/grupo_detalles_articulo1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/lbl_detalle_articulo_clave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/lbl_clave"
+            android:textColor="@color/colorMisLetras"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+            />
+
+        <ImageView
+            android:id="@+id/img_detalles_articulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="1dp"
+
+
+            android:layout_weight="0.00" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lbl_detalle_articulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="@string/lbl_articulo"
+        android:textColor="@color/colorMisLetras"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+    <LinearLayout
+        android:id="@+id/grupo_detalles_articulo2"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/lbl_detalle_articulo_contado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="@string/lbl_forma_contado"
+                android:textColor="@color/colorMisLetras"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+            <TextView
+                android:id="@+id/lbl_detalle_1_mes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="@string/lbl_forma_mes1"
+                android:textColor="@color/colorMisLetras"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/lbl_detalle_2_mes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="@string/lbl_forma_mes2"
+                android:textColor="@color/colorMisLetras"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+            <TextView
+                android:id="@+id/lbl_detalle_3_mes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="@string/lbl_forma_mes3"
+                android:textColor="@color/colorMisLetras"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/lbl_detalle_4_mes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="@string/lbl_forma_mes4"
+                android:textColor="@color/colorMisLetras"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            >
+
+
+            <TextView
+                android:id="@+id/lbl_detalle_5_mes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="@string/lbl_forma_mes5"
+                android:textColor="@color/colorMisLetras"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/lbl_detalle_6_mes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="@string/lbl_forma_mes6"
+                android:textColor="@color/colorMisLetras"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+            <TextView
+                android:id="@+id/lbl_detalle_7_mes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="@string/lbl_forma_mes7"
+                android:textColor="@color/colorMisLetras"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/lbl_detalle_8_mes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="@string/lbl_forma_mes8"
+                android:textColor="@color/colorMisLetras"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/lbl_detalle_9_mes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="@string/lbl_forma_mes9"
+                android:textColor="@color/colorMisLetras"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            >
+
+
+            <TextView
+                android:id="@+id/lbl_detalle_10_mes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="@string/lbl_forma_mes10"
+                android:textColor="@color/colorMisLetras"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+                />
+
+            <TextView
+                android:id="@+id/lbl_detalle_11_mes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="@string/lbl_forma_mes11"
+                android:textColor="@color/colorMisLetras"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/lbl_detalle_12_mes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="@string/lbl_forma_mes12"
+                android:textColor="@color/colorMisLetras"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/lbl_detalle_comicion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="@string/lbl_forma_comicion"
+                android:textColor="@color/colorMisLetras"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/lbl_detalle_mayoreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:text="@string/lbl_forma_mayoreo"
+                android:textColor="@color/colorMisLetras"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

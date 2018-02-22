@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_busca_listados"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/busqueda"
+
+            tools:ignore="ContentDescription" />
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/lbl_listado_detalle_cliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorNegro"
+                    android:layout_weight="1"
+                    android:text="@string/lbl_cliente"
+                     />
+
+                <TextView
+                    android:id="@+id/lbl_listado_detalle_venta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorNegro"
+                    android:layout_weight="1"
+
+                    android:text="@string/lbl_venta"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lbl_listado_detalle_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorMisLetras"
+                android:layout_weight="1"
+                android:text="@string/lbl_nombre"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+            <TextView
+                android:id="@+id/lbl_listado_detalle_direccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorMisLetras"
+                android:layout_weight="1"
+                android:text="@string/lbl_direccion"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+            >
+
+                <TextView
+                    android:id="@+id/lbl_listado_detalle_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorMisLetras"
+                    android:layout_weight="1"
+
+                    android:text="@string/lbl_total"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    />
+                <TextView
+                    android:id="@+id/lbl_listado_detalle_descuento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorMisLetras"
+                    android:layout_weight="1"
+                    android:text="@string/lbl_descuento"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    />
+
+
+
+
+                <TextView
+                    android:id="@+id/lbl_listado_detalle_enganche"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorMisLetras"
+                    android:layout_weight="1"
+
+                    android:text="@string/lbl_enganche"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    />
+
+                <TextView
+                    android:id="@+id/lbl_listado_detalle_saldo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorMisLetras"
+                    android:layout_weight="1"
+                    android:text="@string/lbl_saldo"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/grupo_targeta_fechas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+
+
+                <TextView
+                    android:id="@+id/lbl_listado_detalle_fecha"
+
+                    android:layout_weight="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_fecha"
+                    android:textColor="@color/colorMisLetras"
+                    android:textSize="16sp"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/lbl_listado_detalle_plazo"
+
+                    android:layout_weight="1.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_plazo"
+                    android:textColor="@color/colorMisLetras"
+                    android:textSize="16sp"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/lbl_listado_detalle_vence"
+                    android:layout_weight="3"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_vence"
+                    android:textColor="@color/colorMisLetras"
+                    android:textSize="16sp"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/lbl_listado_detalle_estado"
+                    android:layout_weight=".5"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_estado_atencion"
+                    android:textColor="@color/colorMisLetras"
+                    android:textSize="16sp"
+
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TextView
+                    android:id="@+id/lbl_listado_detalle_pvguardados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorMisLetras"
+                    android:layout_weight="1"
+                    android:text="@string/lbl_pvg"
+
+                    />
+                <TextView
+                    android:id="@+id/lbl_listado_detalle_pvactual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorMisLetras"
+                    android:layout_weight="1"
+                    android:text="@string/lbl_pva"
+
+                    />
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+</LinearLayout>

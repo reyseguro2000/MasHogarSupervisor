@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.iguano_s.mashogarsupervisor.pantallas.EliminarPago">
+
+    <TextView
+        android:id="@+id/lbl_eliminar_recibos_recibo"
+        android:text="@string/lbl_recibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        />
+    <TextView
+        android:id="@+id/lbl_eliminar_recibos_cantidad"
+        android:text="@string/lbl_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        />
+    <TextView
+        android:id="@+id/lbl_eliminar_recibos_venta"
+        android:text="@string/lbl_venta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:id="@+id/lbl_eliminar_recibos_fecha"
+        android:text="@string/lbl_fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        />
+        <Button
+            android:id="@+id/btn_eliminar_recibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_eliminar"
+            android:onClick="onClicEliminarRecibo"
+            android:layout_margin="5dp"
+            />
+
+</LinearLayout>
+

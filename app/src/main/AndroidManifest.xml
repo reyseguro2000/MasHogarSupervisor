@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.iguano_s.mashogarsupervisor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".pantallas.PantallaInicial">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".pantallas.tarjeta_virtual" />
+        <activity android:name=".pantallas.SupervisorPrincipal" />
+        <activity android:name=".pantallas.Catalogo" />
+        <activity android:name=".pantallas.Catalogo_Detalles" />
+        <activity android:name=".pantallas.CatalogoLocal" />
+        <activity android:name=".pantallas.SeleccionarLista" />
+        <activity android:name=".pantallas.agregarPago" />
+        <activity android:name=".pantallas.SeleccionarLista$agregarIndicacion" />
+        <activity android:name=".pantallas.actualizar" />
+        <activity android:name=".pantallas.configurar" />
+        <activity android:name=".pantallas.BuscarClientes" />
+        <activity android:name=".pantallas.Reporte" />
+        <activity android:name=".pantallas.EliminarPago"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo_principal_mor"
+    android:orientation="vertical"
+    android:id="@+id/ventana_principal"
+    tools:context="com.example.iguano_s.mashogarsupervisor.pantallas.SupervisorPrincipal">
+
+    <TextView
+        android:id="@+id/lbl_trabajador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/lbl_persona_cobrador"
+        android:textColor="#ba6913"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:ignore="RelativeOverlap" />
+
+
+<android.support.v7.widget.LinearLayoutCompat
+    android:id="@+id/grupo_botones_principal_0"
+    android:layout_below="@+id/lbl_trabajador"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <EditText
+        android:id="@+id/txt_venta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/lbl_dato_busca"
+        android:inputType="number"
+        android:textColorHint="#ba6913"
+        android:textColor="#ba6913"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+
+
+        />
+
+    <ImageButton
+        android:id="@+id/btn_escanea_venta"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/codigo"
+        tools:ignore="ContentDescription" />
+
+
+</android.support.v7.widget.LinearLayoutCompat>
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/grupo_botones_principal_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_below="@+id/grupo_botones_principal_0"
+        >
+
+        <ImageButton
+
+            android:id="@+id/btn_tarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:background="@drawable/tarjeta_mor"
+            android:contentDescription="@string/lbl_dato_busca"
+            tools:ignore="ContentDescription"
+            />
+
+        <ImageButton
+            android:id="@+id/btn_listas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/listas_mor"
+            tools:ignore="ContentDescription"
+            />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/grupo_botones_principal_2"
+        android:layout_below="@+id/grupo_botones_principal_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <ImageButton
+            android:id="@+id/btn_busqueda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="20dp"
+            android:background="@drawable/buscar_mor"
+            tools:ignore="ContentDescription"
+            />
+
+
+
+        <ImageButton
+            android:id="@+id/btn_catalogo"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/catalogo_mot"
+            tools:ignore="ContentDescription"
+
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/grupo_botones_principal_3"
+        android:layout_below="@+id/grupo_botones_principal_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        >
+        <ImageButton
+            android:id="@+id/btn_reporte"
+
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/reportes_mor"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btn_actualizar"
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/actualizar_mor"
+
+            />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
